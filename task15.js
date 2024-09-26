@@ -1,0 +1,10 @@
+const {Buffer} = require('node:buffer');
+const buff1 =Buffer.alloc(10);
+console.log(buff1);
+const buff2 = Buffer.alloc(10,1);
+console.log(buff2);
+const buff3 = Buffer.allocUnsafe(10);
+console.log(buff3);
+const buff4 = Buffer.from([1,2,3]);
+console.log(buff4);
+const buff5 = Buffer.from([257 , 257.5 , -255 ,'1']);
